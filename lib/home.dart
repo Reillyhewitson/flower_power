@@ -170,8 +170,7 @@ class PlantDetailState extends State<PlantDetail>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(title: Text(widget.plant["name"]), automaticallyImplyLeading: true, ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: ListView(
           children: <Widget>[ 
                   Container(child: Image.network(widget.plant["img"])),
             Container( 
